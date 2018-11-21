@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RingbackTone</string>
+    <string name="call_phone_rationale">RingbackTone needs permission to make phone calls</string>
+    <string name="returned_from_app_settings_to_activity">returned from app settings to activity</string>
+    <string name="phone_status">Phone Status:</string>
+    <string name="ringing">RINGING, number:</string>
+    <string name="offhook">OFFHOOK</string>
+    <string name="idle">IDLE</string>
+    <string name="restarting_app">Restarting app</string>
+    <string name="phone_disabled">Phone calling disabled</string>
+    <string name="telephony_enabled">Telephony is enabled</string>
+    <string name="telephony_not_enabled">TELEPHONY NOT ENABLED!</string>
+    <string name="dial_number">Phone Status: DIALING:</string>
+    <string name="phone_off">Phone off</string>
+    <string name="RBTservice">RingbackTone</string>
+    <string name="rbt_notification_listener_service">Ringback Tone Listener Service</string>
+    <string name="rbt_notification_listener_service_explanation">For the app to work as expected, you need to enable the Notification Listener Service. Enable it now?</string>
+    <string name="rbt_accessibility_service">Ringback Tone Service</string>
+    <string name="rbt_accessibility_service_explanation">For the app to work as expected, you need to enable the Accessibility Service. Enable it now?</string>
+</resources>
