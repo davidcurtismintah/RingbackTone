@@ -25,13 +25,11 @@ class RBTNotificationListener : NotificationListenerService() {
             "${sbn.packageName}\t${sbn.notification.tickerText}\t${sbn.notification.extras.getString(Notification.EXTRA_TEXT)}"
         )
 
-        if (sbn.packageName == "com.google.android.dialer"){
-            val extras = sbn.notification.extras
-            if ("Dialing" == extras.getString(Notification.EXTRA_TEXT)) {
-                manageVolume(true)
-            } else {
-                manageVolume(false)
-            }
+        val extras = sbn.notification.extras
+        if ("Dialing" == extras.getString(Notification.EXTRA_TEXT)) {
+            manageVolume(true)
+        } else {
+            manageVolume(false)
         }
 
         /*if ("Ongoing call" == extras.getString(Notification.EXTRA_TEXT)) {
@@ -62,9 +60,7 @@ class RBTNotificationListener : NotificationListenerService() {
         Timber.i("********** onNotificationRemoved")
         Timber.i("ID :${sbn.id}\t${sbn.notification.tickerText}\t${sbn.packageName}")
 
-        if (sbn.packageName == "com.google.android.dialer"){
-            manageVolume(false)
-        }
+        manageVolume(false)
     }
 
     override fun onListenerConnected() {
